@@ -1,0 +1,63 @@
+
+{% extends 'base.html' %}
+
+
+
+
+
+{% block content1 %}
+  <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ url_for('static', filename='images/rnd.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>Hatchip Laboratory</h2>
+		            <p>Portal to access Laborary facilities</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ url_for('static', filename='images/gov.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>e-invoices processing</h2>
+          <p>The system processes e-invoices into classified document and reports </p>
+		  
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{ url_for('static', filename='images/5g.jpg') }}" alt="Generic placeholder image" width="140" height="140">
+          <h2>RD Progress</h2>
+          <p>Share current top popular industry news</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+{% endblock %}
+
+{% block content2 %} 
+ <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">汇芯通信实验室-射频电路测试系统</h2>
+          <p class="lead">Let's make the measurement better</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="{{ url_for('static', filename='logo.png') }}">
+        </div>
+      </div>
+	  
+	  <form method="post">
+		Name <input type="text" name="title" autocomplete="on" required>
+		Password <input type="text" name="year" autocomplete="on" required>	  
+	  <input type="submit" name="submit" value="登录">  <!-- 提交按钮 -->
+	  
+
+	  </form>
+
+
+{% endblock %}
+
+
+
+

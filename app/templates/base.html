@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% block head %}
+	<meta charset="utf-8">
+	<title>Hatchip Internal</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+	<link rel="icon" href="{{ url_for('static', filename='logo.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	{% endblock %}
+</head>
+
+
+
+
+
+<body>
+{% block nav %}
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar  navbar-static-top">
+          <div class="container">
+
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li> <a href="#">Laboratory</a></li>
+                <li><a href="#about">Hatchip</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+{% endblock %}
+
+
+{% block content1 %}
+{% endblock %}
+
+
+{% block content2 %}
+{% endblock %}
+
+<footer>
+ & Copy 2020 <a href="http://www.hatchip.com/">Hatchip.com</a> 
+</footer>
+
+      <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="js/bootstrap.min.js"></script>
+<body>
+
+
